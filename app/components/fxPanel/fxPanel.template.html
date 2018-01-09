@@ -10,8 +10,8 @@
             <text class="header"x="15" y="55" fill="#fff">Sell {{$ctrl.currency[0]}}</text>
             <text class="course" x="15" y="80" fill="#fff">{{$ctrl.data.buy}}</text>
         </g>
-        <polygon points="120,30 130,30 125,50" fill="red" ng-show="!$ctrl.growth"class="indicator down" />
-        <polygon points="120,50 130,50 125,30" fill="green" ng-show="$ctrl.growth" class="indicator up" />
+        <polygon points="120,30 130,30 125,50" fill="red" ng-show="!$ctrl.growth" />
+        <polygon points="120,50 130,50 125,30" fill="green" ng-show="$ctrl.growth" />
         <g class="fx-panel-currency right" text-anchor="right">
             <path class="shape" d="M 240,40 L 160,40 L 135,65 L 160,90 L240,90 z"/>
             <text class="header" x="195" y="55" fill="#fff">Buy {{$ctrl.currency[0]}}</text>
