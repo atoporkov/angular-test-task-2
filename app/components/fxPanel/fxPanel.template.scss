@@ -1,0 +1,44 @@
+.fx-panel-container {
+    font-family: "Arial";
+    .fx-panel-header {
+        font-weight: 700;
+    }
+    .fx-panel-currency {
+        .shape {
+            fill: #fff;
+            stroke-width: 1;
+            stroke: #607D8B;
+        }
+        .header {
+            fill: #607D8B;
+            font-size: 0.6em;
+            font-weight: 700;
+        }
+        .course{
+            font-size: 1.2em;
+            fill: #607D8B;
+        }
+        &:hover {
+            .shape{
+                stroke-width: 2;
+                stroke: #29B6F6;
+            }
+            .header {
+                fill: #fff;
+            }
+            .course{
+                fill: #fff;
+            }
+            &.right {
+                .shape {
+                    fill: #388E3C;
+                }
+            }
+            &.left {
+                .shape {
+                    fill: #D32F2F;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+<div class="fx-panel-container">
+    <svg width="250px" height="125px" font-family="Arial">
+        <rect x="0" y="0" width="250px" height="125px" fill="#ECEFF1" style="stroke-width:2; stroke: #607D8B" />
+        <g class="fx-panel-header">
+            <rect x="0" y="0" width="250px" height="25px" fill="#607D8B"/>
+            <text x="50%" y="17" text-anchor="middle" fill="#fff">{{$ctrl.data.pair}}</text>
+        </g>
+        <g class="fx-panel-currency left" text-anchor="left">
+            <path class="shape" d="M 10,40 L 90,40 L 115,65 L 90,90 L10,90 z"/>
+            <text class="header"x="15" y="55" fill="#fff">Sell {{$ctrl.currency[0]}}</text>
+            <text class="course" x="15" y="80" fill="#fff">{{$ctrl.data.buy}}</text>
+        </g>
+        <polygon points="120,30 130,30 125,50" fill="red" ng-show="!$ctrl.growth"class="indicator down" />
+        <polygon points="120,50 130,50 125,30" fill="green" ng-show="$ctrl.growth" class="indicator up" />
+        <g class="fx-panel-currency right" text-anchor="right">
+            <path class="shape" d="M 240,40 L 160,40 L 135,65 L 160,90 L240,90 z"/>
+            <text class="header" x="195" y="55" fill="#fff">Buy {{$ctrl.currency[0]}}</text>
+            <text class="course" x="170" y="80" fill="#fff">{{$ctrl.data.sell}}</text>
+        </g>
+    </svg>
+</div>
