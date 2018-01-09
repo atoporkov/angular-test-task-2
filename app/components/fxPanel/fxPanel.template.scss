@@ -7,16 +7,24 @@
         .shape {
             fill: #fff;
             stroke-width: 1;
+            font-weight: 700;
             stroke: #607D8B;
         }
         .header {
-            fill: #607D8B;
             font-size: 0.6em;
-            font-weight: 700;
         }
-        .course{
+        .course {
             font-size: 1.2em;
-            fill: #607D8B;
+        }
+        &.left {
+            .header, .course {
+                fill: #D32F2F;
+            }
+        }
+        &.right {
+            .header, .course {
+                fill: #388E3C;
+            }
         }
         &:hover {
             .shape{
